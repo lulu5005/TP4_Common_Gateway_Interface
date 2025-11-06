@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(214, 233, 233);
+}
+body #co {
+  text-align: right;
+  margin-top: -3%;
+}
+body #co a {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

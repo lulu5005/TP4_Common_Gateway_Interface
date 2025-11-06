@@ -1,7 +1,11 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link href="css/style.css" rel="stylesheet" />
   <meta name="author" content="Mathieu MANGEOT" />
   <meta name="keywords" content="document html5 mmi" />
   <meta name="description" content="Document minimal html5 en DUT MMI" />
@@ -17,5 +21,13 @@
   <meta property="og:site_name" content="Document minimal en MMI" />
   <title>Document minimal en MMI</title>
 </head>
+<body>
+   <?php
+      if(!empty($_SESSION['login'])){
+      echo $_SESSION['login'];
+    }
+    else{
+      echo '<a href="formulaire.php" >connexion</a>';
+    }
+   ?>
 
-</html>
