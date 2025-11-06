@@ -6,6 +6,8 @@
 
     $_SESSION['login'] = $identifiant;
 
+    echo "Bonjour", $identifiant;
+
     include('pieddepage.php');
 
 
